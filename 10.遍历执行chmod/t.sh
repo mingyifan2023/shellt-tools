@@ -8,3 +8,6 @@ chmod 777 "$directory"/*
 
 # 遍历便利文件夹中的所有文件夹并执行 chmod 777 *
 find "$directory" -type d -exec chmod 777 {} \;
+
+# 修改所有文件的权限为 777
+find "$directory" -type f -exec chmod 777 {} \;
